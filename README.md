@@ -1,2 +1,2 @@
 # Postit.com
-Projeto Criado com Vinicius Mofardini
+* Projeto Criado com Vinicius Mofardini
