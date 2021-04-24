@@ -19,6 +19,7 @@ $artigos = $artigo->exibirTodos();
 </head>
 
 <body>
+  <section class="section-main">
         <div class="div-h1"> 
             <h1>Postits</h1>
             <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/10/Papel-Post-it-PNG-1018x1024.png" alt="">
@@ -46,7 +47,7 @@ $artigos = $artigo->exibirTodos();
         </div>
       <?php } ?>
     </div>
-    
+  <section>
 </body>
 <footer>
     <div class="container-footer">
