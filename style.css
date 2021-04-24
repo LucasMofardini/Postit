@@ -14,14 +14,14 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.container h1{
-  font-size: 2.5em;
+h1{
+  font-size: 3.5rem;
 }
 .div-h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  user-select: none;
 }
 .div-h1 img{
   width: 30px;
@@ -61,5 +61,24 @@ body{
 }
 
 footer{
-  margin: 40px 0;
+  margin-top: 100px;
+  font-size: 1.25rem;
+
+}
+.container-footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+}
+footer .container-footer a{
+  padding: 0 5px;
+  color: white;
+  font-weight: 600;
+}
+footer b,footer span{
+color: white;
+padding: 0 2px;
 }

@@ -42,6 +42,8 @@ $artigos = $artigo->exibirTodos();
     
 </body>
 <footer>
-    
+    <div class="container-footer">
+    <b><></b><span>WITH</span> <b>♥</b> <p>by</p>  <a target="_blank" href="https://github.com/lucasmofardini"> @Lucas Mofardini</a> e <a target="_blank" href="https://github.com/viniciusgrangeiro"> @Vinicius Mofardini </a>
+    </div>
 </footer>
 </html>
