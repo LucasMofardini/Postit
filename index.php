@@ -23,6 +23,10 @@ $artigos = $artigo->exibirTodos();
             <h1>Postits</h1>
             <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/10/Papel-Post-it-PNG-1018x1024.png" alt="">
         </div>
+        <div class="container-mais">
+        <img src="http://www.clker.com/cliparts/s/7/R/k/j/Z/icon-add.svg.med.png" alt="">
+
+        </div>
 
     <div class="container">
         <?php foreach($artigos as $artigo) { ?>
