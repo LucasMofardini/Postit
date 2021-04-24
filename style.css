@@ -5,11 +5,14 @@
 }
 body{
   background-color: #f8e066;
+  font-family: 'Indie Flower', cursive;
 }
 .container{
   max-width: 960px;
   margin: 0 auto;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .container h1{
   font-size: 2.5em;
@@ -26,9 +29,37 @@ body{
   margin: 0 20px;
 }
 .container-postit{
-background-image: url(https://imagensemoldes.com.br/wp-content/uploads/2020/10/Papel-Post-it-PNG-1018x1024.png);
-background-repeat: no-repeat;
-background-size: 50%;
-min-height: 500px;
+  background-image: url(https://imagensemoldes.com.br/wp-content/uploads/2020/10/Papel-Post-it-PNG-1018x1024.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 400px;
+  max-width: 400px;
+  padding: 30px 0;
+  margin: 20px 0;
+  cursor: pointer;
 
+}
+.container-postit:hover{
+  transform: scale(1.3);
+}
+.escrita{
+  margin-top: 10%;
+  margin-left: 5%;
+
+
+}
+.escrita h2{
+  color: #ffd500;
+}
+.escrita p{
+  padding: 10px 25px;
+  letter-spacing: 2px;
+  color:#C51812;
+  word-wrap: break-word;
+}
+
+footer{
+  margin: 40px 0;
 }

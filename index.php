@@ -14,6 +14,8 @@ $artigos = $artigo->exibirTodos();
     <meta charset="UTF-8">
     <link rel="icon" href="https://images.vectorhq.com/images/previews/479/postit-538805.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,16 +27,21 @@ $artigos = $artigo->exibirTodos();
     <div class="container">
         <?php foreach($artigos as $artigo) { ?>
         <div class="container-postit">
-                <h2>
-                    <?php echo $artigo['titulo']; ?>
-                </h2>
-                <p>
-                <?php echo nl2br($artigo['conteudo']); ?>
-                </p>
+            <div class="escrita">
+                    <h2>
+                        <?php echo $artigo['titulo']; ?>
+                    </h2>
+                    <p>
+                    <?php echo nl2br($artigo['conteudo']); ?>
+                    </p>
+
+            </div>
         </div>
       <?php } ?>
     </div>
     
 </body>
-
+<footer>
+    
+</footer>
 </html>
