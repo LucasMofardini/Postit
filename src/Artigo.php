@@ -10,7 +10,7 @@
         }
         public function exibirTodos():array{
 
-           $resultado = $this->mysql->query('SELECT titulo, conteudo FROM artigo;');
+           $resultado = $this->mysql->query('SELECT titulo, conteudo, horario_publicacao FROM artigo;');
            $artigos = $resultado->fetch_all(MYSQLI_ASSOC);
            
             return $artigos;

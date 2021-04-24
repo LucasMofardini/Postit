@@ -38,6 +38,9 @@ $artigos = $artigo->exibirTodos();
                     <p>
                     <?php echo nl2br($artigo['conteudo']); ?>
                     </p>
+                    <small>
+                        <?php echo $artigo['horario_publicacao']; ?>
+                    </small>
 
             </div>
         </div>
@@ -51,3 +54,4 @@ $artigos = $artigo->exibirTodos();
     </div>
 </footer>
 </html>
+

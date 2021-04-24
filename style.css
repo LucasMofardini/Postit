@@ -1,108 +1,115 @@
-*{
-  margin: 0;
-  padding: 0;
-  
-}
-body{
-  background-color: #f8e066;
-  font-family: 'Indie Flower', cursive;
+  *{
+    margin: 0;
+    padding: 0;
+    
+  }
+  body{
+    background-color: #f8e066;
+    font-family: 'Indie Flower', cursive;
+    position: relative;
+  }
+  .container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+  .div-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+  .div-h1 img{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+  }
+  .container-mais{
+    background-image: url(https://images.vexels.com/media/users/3/146711/isolated/preview/e2088d8541cb9a3e108a998b0ad4e047-post-it-amarelo-by-vexels.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+  }
+  .container-mais img{
+    width: 55px;
+    
+  }
+  .container-mais:hover{
+    transform: scale(1.3);
+  }
+  .container-postit{
+    background-image: url(https://imagensemoldes.com.br/wp-content/uploads/2020/10/Papel-Post-it-PNG-1018x1024.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 400px;
+    max-width: 400px;
+    padding: 30px 0;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  .container-postit:hover{
+    transform: scale(1.3);
+  }
+  .escrita{
+    margin-top: 10%;
+    margin-left: 5%;
   position: relative;
-}
-.container{
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-h1{
-  font-size: 3.5rem;
-}
-.div-h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-}
-.div-h1 img{
-  width: 30px;
-  height: 30px;
-  margin: 0 20px;
-}
-.container-mais{
-  background-image: url(https://images.vexels.com/media/users/3/146711/isolated/preview/e2088d8541cb9a3e108a998b0ad4e047-post-it-amarelo-by-vexels.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  right: 30px;
-  top: 30px;
-  cursor: pointer;
-}
-.container-mais img{
-  width: 55px;
+  }
+  small{
+    position: absolute;
+    right: 30px;
+    opacity: 0.4;
+    top: 0;
+  }
+  .escrita h2{
+    color: #ffd500;
   
-}
-.container-mais:hover{
-  transform: scale(1.3);
-}
-.container-postit{
-  background-image: url(https://imagensemoldes.com.br/wp-content/uploads/2020/10/Papel-Post-it-PNG-1018x1024.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  min-height: 200px;
-  max-height: 200px;
-  min-width: 400px;
-  max-width: 400px;
-  padding: 30px 0;
-  margin: 20px 0;
-  cursor: pointer;
+  }
+  .escrita p{
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    color:#C51812;
+    word-wrap: break-word;
+  }
 
-
-}
-.container-postit:hover{
-  transform: scale(1.3);
-}
-.escrita{
-  margin-top: 10%;
-  margin-left: 5%;
-
-
-}
-.escrita h2{
-  color: #ffd500;
-}
-.escrita p{
-  padding: 10px 25px;
-  letter-spacing: 2px;
-  color:#C51812;
-  word-wrap: break-word;
-}
-
-footer{
-  margin-top: 100px;
-  font-size: 1.25rem;
-
-}
-.container-footer{
-  background-color: black;
+  footer{
+    margin-top: 100px;
+    font-size: 1.25rem;
+  position: relative;
+  width: 100%;
+ 
+  }
+  .container-footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  
+  }
+  footer .container-footer a{
+    padding: 0 5px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  footer b,footer span{
   color: white;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
+  padding: 0 2px;
+  }
 
-}
-footer .container-footer a{
-  padding: 0 5px;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-}
-footer b,footer span{
-color: white;
-padding: 0 2px;
-}
