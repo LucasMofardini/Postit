@@ -1,5 +1,4 @@
 # Postit
-_____
 
 ### Criado por :
 * Lucas Mofardini
