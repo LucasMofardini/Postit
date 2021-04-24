@@ -24,9 +24,18 @@ $artigos = $artigo->exibirTodos();
             <h1>Postits</h1>
             <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/10/Papel-Post-it-PNG-1018x1024.png" alt="">
         </div>
-        <div class="container-mais">
-        <img src="http://www.clker.com/cliparts/s/7/R/k/j/Z/icon-add.svg.med.png" alt="">
-
+        <div class="container-inserir">
+            <div class="container-mais">
+            <img src="http://www.clker.com/cliparts/s/7/R/k/j/Z/icon-add.svg.med.png" alt="">
+            </div>
+            <div class="container-form-adicionar ">
+                <form action="index.php" method="GET">
+                    <h3>Inserir</h3>
+                    <input autocomplete="off" type="text" id="titulo" placeholder="Titulo">
+                    <textarea id="conteudo" placeholder="Conteudo . . ."></textarea>
+                    <input type="submit">
+                </form>
+            </div>
         </div>
 
     <div class="container">
@@ -54,5 +63,6 @@ $artigos = $artigo->exibirTodos();
     <b><></b><span>WITH</span> <b>♥</b> <p>by</p>  <a target="_blank" href="https://github.com/lucasmofardini"> @Lucas Mofardini</a> e <a target="_blank" href="https://github.com/viniciusgrangeiro"> @Vinicius Mofardini </a>
     </div>
 </footer>
+<script src="script.js"></script>
 </html>
 
