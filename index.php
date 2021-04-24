@@ -10,23 +10,28 @@ $artigos = $artigo->exibirTodos();
 <html lang="pt-br">
 
 <head>
-    <title>Meu Blog - Lucas</title>
+    <title>Postit</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="https://images.vectorhq.com/images/previews/479/postit-538805.png">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    
-    <div id="container">
-        <h1>Meu Blog</h1>
+        <div class="div-h1"> 
+            <h1>Postits</h1>
+            <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/10/Papel-Post-it-PNG-1018x1024.png" alt="">
+        </div>
+
+    <div class="container">
         <?php foreach($artigos as $artigo) { ?>
-        <h2>
-            
-                <?php echo $artigo['titulo']; ?>
-        </h2>
-        <p>
-        <?php echo nl2br($artigo['conteudo']); ?>
-        </p>
+        <div class="container-postit">
+                <h2>
+                    <?php echo $artigo['titulo']; ?>
+                </h2>
+                <p>
+                <?php echo nl2br($artigo['conteudo']); ?>
+                </p>
+        </div>
       <?php } ?>
     </div>
     
