@@ -15,6 +15,11 @@
            
             return $artigos;
         }
+        public function adiciona(string $titulo, string $conteudo):void{
+            $result = $this->mysql->query("CALL sp_adicionaArtigo('$titulo', '$conteudo');");
+        
+        }
+
 
     }
 

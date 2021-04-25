@@ -65,8 +65,9 @@
     user-select: none;
     
   }
-  .container-mais:hover{
-    transform: scale(1.3);
+  .container-mais:hover,.container-mais:active,.container-mais:focus{
+    /* transform: scale(1.3); */
+    transform: rotate(10deg)
   }
   .container-form-adicionar{
     background-color: #FAF382;
@@ -198,3 +199,17 @@
   padding: 0 2px;
   }
 
+/* Mensagem de erro */
+.container-erro{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+
+}
+.msg-error{
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+}

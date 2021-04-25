@@ -5,6 +5,22 @@ require_once 'src/Artigo.php';
 $artigo = new Artigo($mysql);
 $artigos = $artigo->exibirTodos();
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if($_POST['titulo'] && $_POST['conteudo']){
+        $artigo->adiciona($_POST['titulo'],$_POST['conteudo']);
+        header("Location: index.php");
+    }else{
+        echo '
+        <div class="container-erro">
+        <span class="msg-error">
+       Ambos os campos precisam ser preenchidos
+        </span>
+        </div>
+        ';
+    }
+    
+  
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -29,10 +45,10 @@ $artigos = $artigo->exibirTodos();
             <img src="http://www.clker.com/cliparts/s/7/R/k/j/Z/icon-add.svg.med.png" alt="">
             </div>
             <div class="container-form-adicionar ">
-                <form action="index.php" method="GET">
+                <form action="index.php" method="post">
                     <h3>Inserir</h3>
-                    <input autocomplete="off" type="text" id="titulo" placeholder="Titulo">
-                    <textarea id="conteudo" placeholder="Conteudo . . ."></textarea>
+                    <input autocomplete="off" type="text" id="titulo" name="titulo" placeholder="Titulo">
+                    <textarea id="conteudo" name="conteudo" placeholder="Conteudo . . ."></textarea>
                     <input type="submit">
                 </form>
             </div>
