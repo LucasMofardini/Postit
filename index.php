@@ -6,6 +6,7 @@ $artigo = new Artigo($mysql);
 $artigos = $artigo->exibirTodos();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
     if($_POST['titulo'] && $_POST['conteudo']){
         $artigo->adiciona($_POST['titulo'],$_POST['conteudo']);
         header("Location: index.php");
@@ -18,9 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         ';
     }
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     
-  
+    }
 }
+// if($_POST['id'] && $_SERVER['REQUEST_METHOD'] === 'POST'){
+//     echo $_POST['id'];
+//     // $artigo->apaga($_POST['id']);
+//     // header("Location: index.php");
+
+// }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -61,6 +69,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <h2>
                         <?php echo $artigo['titulo']; ?>
                     </h2>
+                    <form action="index.php" method="post">
+                        <?php echo $artigo['id']; ?>
+                        <button type="submit"> X </button>
+                    </form>
+                    
+                    </p>
                     <p>
                     <?php echo nl2br($artigo['conteudo']); ?>
                     </p>
