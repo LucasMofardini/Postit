@@ -4,4 +4,5 @@
 * Lucas Mofardini
 * Vinicius Mofardini
 </br>
-<img src="src/image/projetinho-postit.png">
+
+<img src="image/postit-funcionamento.gif" />
