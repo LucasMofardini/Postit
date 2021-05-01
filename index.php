@@ -35,7 +35,7 @@ if($_POST['id'] && $_SERVER['REQUEST_METHOD'] === 'POST'){
 <head>
     <title>Postit</title>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://images.vectorhq.com/images/previews/479/postit-538805.png">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1095/1095052.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
