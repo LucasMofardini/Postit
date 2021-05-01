@@ -5,4 +5,4 @@
 * Vinicius Mofardini
 </br>
 
-<img src="image/postit-funcionamento.gif" />
+<img src="image/postit-funcionamento2.gif" />
