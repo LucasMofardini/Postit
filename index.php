@@ -51,9 +51,9 @@ if($_POST['id'] && $_SERVER['REQUEST_METHOD'] === 'POST'){
             <div class="container-mais">
             <img src="http://www.clker.com/cliparts/s/7/R/k/j/Z/icon-add.svg.med.png" alt="">
             </div>
-            <div class="container-form-adicionar ">
+            <div class="container-form-adicionar">
                 <form action="index.php" method="post">
-                    <h3>Inserir</h3>
+                    <!-- <h3>Inserir</h3> -->
                     <input autocomplete="off" type="text" id="titulo" name="titulo" placeholder="Titulo">
                     <textarea id="conteudo" name="conteudo" placeholder="Conteudo . . ."></textarea>
                     <input type="submit">
