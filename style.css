@@ -102,6 +102,9 @@
     display: block;
     opacity: 1;
     visibility: visible;
+
+
+
   }
   .container-form-adicionar form{
     display: flex;
@@ -141,7 +144,7 @@
   }
   .container-form-adicionar textarea {
     resize: none;
-    height: 150px;
+    height: 100px;
     border: none;
     outline: none;
     padding: 0;
@@ -170,7 +173,7 @@
   .container-form-adicionar .container-color input{
     display: none;
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden; 
 
   }
   .container-form-adicionar input:checked + label {
@@ -201,6 +204,8 @@
     margin: 20px 0;
     cursor: pointer;
     position: relative;
+
+    
   }
   .container-postit:hover{
     transform: scale(1.1);
@@ -300,4 +305,12 @@
   font-weight: bold;
   position: relative;
   top: 0;
+}
+@keyframes animaEntrada{
+  to{
+    transform: translate3d(-30px,0,0);
+  }
+  from{
+    transform: translate3d(0,0,0);
+  }
 }
