@@ -54,6 +54,14 @@ if($_POST['id'] && $_SERVER['REQUEST_METHOD'] === 'POST'){
             <div class="container-form-adicionar">
                 <form action="index.php" method="post">
                     <!-- <h3>Inserir</h3> -->
+                    <div class="container-color">
+                        <input type="radio" name="cor" id="laranja" value="1" checked="checked">
+                        <label for="laranja" id="laranja"></label>
+                        <input type="radio" name="cor" id="azul" value="2">
+                        <label for="azul" id="azul"></label>
+                        <input type="radio" name="cor" id="verde" value="3">
+                        <label for="verde" id="verde"></label>
+                    </div>
                     <input autocomplete="off" type="text" id="titulo" name="titulo" placeholder="Titulo">
                     <textarea id="conteudo" name="conteudo" placeholder="Conteudo . . ."></textarea>
                     <input type="submit">
