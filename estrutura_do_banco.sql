@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS `artigo` (
   `titulo` varchar(100) NOT NULL DEFAULT '0',
   `conteudo` varchar(250) NOT NULL DEFAULT '0',
   `horario_publicacao` datetime DEFAULT NULL,
+  `cor` int(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
 
